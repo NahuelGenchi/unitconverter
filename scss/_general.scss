@@ -1,5 +1,12 @@
-@use "abstracts/colors";
+@use "abstracts/fonts" as f;
 
-body {
-    background: colors.$darkBlue;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    font-size: f.$default;
 }

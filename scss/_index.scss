@@ -1,0 +1,53 @@
+@use "./abstracts/colors" as c;
+@use "./abstracts/fonts" as f;
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: c.$darkBlue;
+    .container {
+        height: 550px;
+        width: 500px;
+        background: white;
+        border-radius: 5px;
+        .container-top {
+            height: 40%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            .title {
+                font-size: 1.5rem;
+            }
+            .number {
+                font-size: 3rem;
+            }
+        }
+        .container-bottom {
+            height: 60%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: c.$blue;
+            .container-info {
+                height: 30%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                font-weight: bold;
+                color: white;
+                div {
+                    font-weight: initial;
+                    color: rgb(199, 199, 199);
+                }
+            }
+        }
+    }
+}
