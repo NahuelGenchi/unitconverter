@@ -5,6 +5,7 @@ let volume_lg = document.querySelector("#volume_lg");
 let volume_gl = document.querySelector("#volume_gl");
 let mass_kp = document.querySelector("#mass_kp");
 let mass_pk = document.querySelector("#mass_pk");
+let button = document.querySelector("#button");
 function unitNumber() {
     let unitNum = prompt("Type a number: ");
     let feetToMeter = unitNum * 0.3048;
@@ -22,3 +23,4 @@ function unitNumber() {
     mass_pk.textContent = `${unitNum} pounds = ${poundsToKilos.toFixed(3)} kilos`;
 };
 unitNumber();
+button.addEventListener("click", unitNumber);
